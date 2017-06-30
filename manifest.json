@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "What To Eat",
+  "description": "My first Chrome extension.",
+  "version": "0.1",
+  "permissions": [
+	// "activeTab"
+    "tabs", "http://*/*", "https://*/*"
+  ],
+ "background": {
+    "scripts": ["getfood.js"],
+	"persistent": false
+  },	
+  "browser_action": {
+    "default_icon": "1001.png",
+	"default_title" : "This app will suggest where to grab lunch.",
+	"default_popup": "popup.html"
+  }
+}
